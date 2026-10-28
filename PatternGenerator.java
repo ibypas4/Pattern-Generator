@@ -1,14 +1,11 @@
 //  Class author:  Ivy Pascover
 //  Date created:  10/28/26
-//  General description: creates patterns based on input
+//  General description: creates patterns with different amounts of rows
 
 public class PatternGenerator {
 
-
-
 //  Pre-condition: rows is a positive integer
-//  including possible limitations on input
-//  Post-condition: what the result of executing this method will be.
+//  Post-condition: a stars forming a triangle with the amount of rows in the call
 public static void stars(int rows){
     String output="*";
     while(0<rows){
@@ -20,8 +17,8 @@ public static void stars(int rows){
 }
 
 //  Pre-condition: rows is a positive integer
-//  including possible limitations on input
-//  Post-condition: what the result of executing this method will be.
+//  Post-condition: a triangle made of numbers thaat arer the number for the amount of numbers in that row
+//  has rows amount of rows
 public static void triangle(int rows){
     int i=0;
     while(i<=rows){
@@ -36,9 +33,8 @@ public static void triangle(int rows){
     System.out.println();
 }
 
-//  Pre-condition: rows is a positive integer
-//  including possible limitations on input
-//  Post-condition: what the result of executing this method will be.
+//  Pre-condition: start is a positive integer
+//  Post-condition: triangle of numbers with that amount of numbers that go until it gets to zero using only odd numbers
 public static void odds(int start){
     for(;start>0;start--){
         if(start%2!=0){
@@ -51,9 +47,8 @@ public static void odds(int start){
     System.out.println();
 }
 
-//  Pre-condition: rows is a positive integer
-//  including possible limitations on input
-//  Post-condition: what the result of executing this method will be.
+//  Pre-condition: maxE is a positive integer
+//  Post-condition: increasing then decreasng amount of e's or o's in the row and the row with the most letters is made of e's and has maxE amount of them
 public static void eo(int maxE){
     Boolean parity=maxE%2==0;
     for(int i=0;i<=maxE;i++){
@@ -83,8 +78,8 @@ public static void eo(int maxE){
 }
 
 //  Pre-condition: rows is a positive integer
-//  including possible limitations on input
-//  Post-condition: what the result of executing this method will be.
+//  Post-condition: creats an upside doown ppyramid made of numbers that are the row number and decrease 
+// the amount of the numbers as it goes and it is centered 
 public static void pyramid(int rows){
     int amount=rows*2;
     String space="";
